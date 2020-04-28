@@ -1,0 +1,44 @@
+button[type=submit]{
+    width:100%;
+}
+h1{
+    font-family: 'Tangerine', serif;
+    font-size: 6rem;
+    text-shadow: 5px 5px 5px rgb(248, 11, 82);
+    text-align: center;
+    color:rgb(13, 236, 252);
+}
+body{
+    background-color: black;
+}
+label{
+    color:rgb(13, 236, 252);
+    text-shadow: 2px 2px 2px rgb(248, 11, 82);
+    font-size:2rem;
+
+}
+.ligne{
+    width:100%;
+    border:3px solid rgb(13, 236, 252);
+
+}
+.creat,.update,.delete,.table{
+    box-sizing: border-box;
+    padding-top: 20px;
+    margin: 2px;
+}
+.affichage{
+    color:rgb(13, 236, 252);
+
+}
+.table,th, tr,td{
+    color:rgb(13, 236, 252);
+    border:2px solid rgb(248, 11, 82);
+}
+.input-group-prepend{
+    display: flex;
+    flex-direction: column;
+}
+span{
+    font-size: 30px;
+}
