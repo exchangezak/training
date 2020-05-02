@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="example">
+        <p>Message original : {{ m}}</p>
+        <p>Message inversé calculé : {{ reversedMessage }}</p>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+      <script>
+var vm = new Vue({
+  el: '#example',
+  data: {
+    m: 'Bonjour'
+  
+
+  },
+  computed: {
+    // un accesseur (getter) calculé
+    reversedMessage: function () {
+      // `this` pointe sur l'instance vm
+      return this.m.split('').reverse().join('')
+    }
+  },
+
+})    
+// L'objet est ajouté à une instance de Vue
+
+    </script>
+        
+
+</body>
+</html>

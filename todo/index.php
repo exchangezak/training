@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
   <title>Document</title>
 </head>
+<?php require_once "api-ajax.php" ;  ?>
 
 <body>
   <header>
@@ -16,6 +17,7 @@
     <div class="ligne"></div>
   </header>
   <main>
+  <!-- la section du formulaire de creation -->
     <section class="creat">
       <form class="ajax creat" method="post">
         <div class="form-group">
@@ -49,8 +51,8 @@
         <input type="hidden" name="formulaire" value="creat">
         <button type="submit" class="btn btn-primary ">Ajouter</button>
     </form>
-
     </section>
+    <!-- la section du formulaire de update -->
     <section class="update">
       <form class="ajax update" method="post">
         <div class="form-group">
@@ -87,7 +89,7 @@
         <button type="submit" class="btn btn-primary ">Modifier</button>
       </form>
     </section>
-
+<!-- la section de formulaire de suppression -->
     <section class="delete">
       <form class="ajax delete" method="post">
         <div class="form-group">
@@ -98,6 +100,7 @@
         <button type="submit" class="btn btn-primary ">SUPPRIMER</button>
       </form>
     </section>
+   <!-- la section d'affichage des listes de tache  -->
     <section class="affichage">
       <table class="table">
         <thead>
@@ -111,8 +114,21 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-          </tr>
+            <?php
+            $tableau=read();
+            foreach($tableau as $tab){
+              extract($tab);
+              echo
+            "<tr>
+            <td>$id</td>
+            <td >$title</td>
+            <td >$description</td>
+            <td >$statut</td>
+            <td><button stat='$statut' des='$description' tit='$title' class='modif' id=$id>modifier</button></td>
+            <td><button class='del' id=$id>supprimer</button></td>
+            </tr>";
+          }
+        ?>
         </tbody>
       </table>
     </section>

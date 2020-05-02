@@ -42,3 +42,6 @@ label{
 span{
     font-size: 30px;
 }
+ .delete{
+    display:none;
+}
