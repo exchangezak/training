@@ -124,8 +124,8 @@
             <td >$title</td>
             <td >$description</td>
             <td >$statut</td>
-            <td><button stat='$statut' des='$description' tit='$title' class='modif' id=$id>modifier</button></td>
-            <td><button class='del' id=$id>supprimer</button></td>
+            <td><button type='button' class='btn btn-success modif' stat=$statut des=$description tit=$title id=$id>modifier</button></td>
+            <td><button type='button' class='btn btn-danger del' id=$id>supprimer</button></td>
             </tr>";
           }
         ?>

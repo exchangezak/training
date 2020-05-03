@@ -42,6 +42,12 @@ label{
 span{
     font-size: 30px;
 }
- .delete{
+ form.delete{
     display:none;
+}
+form.update{
+    display:none;
+}
+form.update.cache{
+    display:block;
 }
