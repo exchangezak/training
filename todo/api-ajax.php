@@ -1,4 +1,5 @@
 <?php
+
 function getConnection(){
     $dsn=("mysql:host=localhost;dbname=datas;charset=utf8");
     $user="root";
