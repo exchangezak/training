@@ -8,8 +8,10 @@ butDel.forEach(function (del) {
       document.querySelector(".delete button[type=submit]").click()
    })
 })
-let formulaire=document.querySelector("form.update")
-let butMod = document.querySelectorAll(".modif")
+let formulaire=document.querySelector("form.update")         
+
+
+let butMod = document.querySelectorAll(".modif")         
 butMod.forEach(function (mod) {
    mod.addEventListener("click", function (e) {
       formulaire.classList.add("cache")
