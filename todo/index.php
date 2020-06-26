@@ -56,8 +56,7 @@
     <section class="update">
       <form class="ajax update" method="post">
         <div class="form-group">
-          <label for="id">ID</label>
-          <input type="text" name="id" class="form-control" id="id" placeholder="Enter your ID">
+          <input type="hidden" name="id" class="form-control" id="id" placeholder="Enter your ID">
         </div>
         <div class="form-group">
           <label for="title">Title</label>
