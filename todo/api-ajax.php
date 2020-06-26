@@ -68,9 +68,3 @@ if($formulaire=="delete"){
         delete($tab,$sql);
     }
 }
-
-$sql="SELECT  id_utilisateur AND
-AND id_competence, 
-AND id_niveau,* FROM (utilisateur,competence,niveau)
-
-INNER JOIN niveau_utilisateur ON utilisateur.id = utilisateur.id_utilisateur AND  ";
